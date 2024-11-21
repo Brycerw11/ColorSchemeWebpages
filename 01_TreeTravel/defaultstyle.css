@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    background: url("./images/icons/GreenBackground.svg");
+}
+
+nav{
+    font-family: "OpenSans";
+    background-color: #405D3E;
+
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+}
+.headerFlexBox{
+    display: flex;
+    align-items: center;
+}
+.logoAndLogoText{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+div.logoDiv{
+    padding: 5px;
+}
+nav h3{
+    padding: 3px;
+    color: white;
+}
+.navBarLink{
+    text-align: center;
+    color: white;
+    margin: 0px 3px;
+}
+.navBarLinkDiv{
+    padding: 10px 15px;
+}
+.navBarLink:hover{
+    background-color: #3A6B36;
+}
+.activePage{
+    color: #0CF550;
+}
+
+@media (max-width: 500px) {
+    .headerFlexBox{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logoAndLogoText{
+        width: 100%;
+    }
+}
+
