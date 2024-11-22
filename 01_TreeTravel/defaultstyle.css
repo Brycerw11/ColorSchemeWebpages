@@ -2,6 +2,9 @@
     font-family: "OpenSans";
     src: url(./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
 }
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "OpenSans";
+}
 
 *{
     margin: 0px;
@@ -9,6 +12,16 @@
 
 body{
     background: url("./images/icons/GreenBackground.svg");
+}
+
+.crossedOut{
+    text-decoration: line-through;
+}
+.green{
+    color: #2DC020;
+}
+.floatLeft{
+    float: left;
 }
 
 nav{
@@ -40,12 +53,15 @@ nav h3{
     text-align: center;
     color: white;
     margin: 0px 3px;
+
+    border-radius: 0px;
 }
 .navBarLinkDiv{
     padding: 10px 15px;
 }
 .navBarLink:hover{
     background-color: #3A6B36;
+    border-radius: 8px;
 }
 .activePage{
     color: #0CF550;
@@ -61,3 +77,51 @@ nav h3{
     }
 }
 
+.focusImage{
+    width: 100%;
+    height: auto;
+}
+
+.focusImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.tagLine{
+    display: flex;
+    background-color: white;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+
+    --focus-img-height: 100;
+    --focus-img-height-inpx: calc(1px * var(--focus-img-height));
+
+    position: absolute;
+    top: calc(var(--focus-img-height-inpx) - 90px);
+    left: 10px;
+}
+.tagLine > h2{
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 550px) {
+    .tagLine{
+        /* Moves tag line underneath the focusImage */
+        position: static;
+        margin: auto;
+    }
+}
+
+.contentSection{
+    margin: 8px;
+}
+.contentSection img{
+    margin: 5px;
+}
+.contentSection p{
+    text-indent: 4rem;
+}
