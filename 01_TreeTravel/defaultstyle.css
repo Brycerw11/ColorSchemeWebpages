@@ -14,11 +14,15 @@ body{
     background: url("./images/icons/GreenBackground.svg");
 }
 
+main{
+    color: #086100;
+}
+
 .crossedOut{
     text-decoration: line-through;
 }
 .green{
-    color: #2DC020;
+    color: #3A9632;
 }
 .floatLeft{
     float: left;
@@ -89,7 +93,7 @@ nav h3{
 
 .tagLine{
     display: flex;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.8);
     border-radius: 100%;
     align-items: center;
     justify-content: center;
@@ -124,4 +128,67 @@ nav h3{
 }
 .contentSection p{
     text-indent: 4rem;
+}
+.sections12{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sections12 img{
+    width: 50%;
+    min-width: 180px;
+    height: auto;
+}
+.sections12 p {
+    text-indent: 0px;
+}
+@media (max-width: 650px) {
+    .sections12{
+    
+        flex-wrap: wrap;
+    }
+}
+
+
+.footerBorder{
+    height: 5px;
+    border-width: 0;
+    color: #2B332B;
+    background-color: #2B332B;
+}
+footer{
+    background-color: #405D3E;
+    color: white;
+}
+.footerContainer{
+    font-size: 1.1rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer svg{
+    color: white;
+}
+.legalStuff{
+    margin: 35px 20px;
+}
+.socialMedias{
+    list-style: none;
+}
+.socialMedias > li {
+    display: inline;
+}
+footer a{
+    color: #0CF550;
+}
+
+.footerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+button:hover{
+    background-color: #0CF550;
+    color: #2B332B;
 }
