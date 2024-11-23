@@ -1,6 +1,6 @@
 @font-face {
     font-family: "OpenSans";
-    src: url(./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+    src: url(../UniversalFiles/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
 }
 h1, h2, h3, h4, h5, h6, p{
     font-family: "OpenSans";
@@ -167,7 +167,7 @@ footer{
     justify-content: space-evenly;
 }
 footer svg{
-    color: white;
+    fill: rgb(227, 45, 45);
 }
 .legalStuff{
     margin: 35px 20px;
