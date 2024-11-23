@@ -1,3 +1,5 @@
+/* Setting Up */
+
 @font-face {
     font-family: "OpenSans";
     src: url(../UniversalFiles/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
@@ -11,6 +13,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 *{
+    /* Margin Set to 0 so header can touch edge of page */
     margin: 0px;
 }
 
@@ -27,15 +30,14 @@ main p {
     margin: 3px;
 }
 
-.crossedOut{
-    text-decoration: line-through;
-}
 .floatLeft{
     float: left;
 }
 .floatRight{
     float: right;
 }
+
+/* Start of Header CSS */
 
 nav{
     font-family: "OpenSans";
@@ -46,6 +48,7 @@ nav{
 
     border-bottom: #F53010 solid 3px;
 
+    /* Fixes Header to Top of Screen */
     position: fixed;
     top: 0;
 }
@@ -81,10 +84,12 @@ nav h3{
     padding: 10px 15px;
 }
 .navBarLink:hover{
+    /* Create an area behind the link when you hover over it so it looks like a button */
     background-color: #F58014;
     border-radius: 8px;
 }
 
+/* Allows nav bar to look nice at smaller screen sizes */
 @media (max-width: 500px) {
     .headerFlexBox{
         flex-wrap: wrap;
@@ -95,6 +100,8 @@ nav h3{
     }
 }
 
+/* End of Nav Bar CSS, still in header */
+
 .focusImage{
     width: 100%;
     height: auto;
@@ -104,6 +111,8 @@ nav h3{
     width: 100%;
     height: 100%;
 }
+/* End of Header CSS */
+/* Start of Content CSS */
 
 .contentSection{
     margin: 8px;
@@ -129,6 +138,8 @@ nav h3{
         float: none;
     }
 }
+/* End of Content CSS */
+/* Start of Footer CSS */
 
 .footerBorder{
     height: 5px;

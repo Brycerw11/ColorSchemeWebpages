@@ -1,3 +1,5 @@
+/* Setting Up */
+
 @font-face {
     font-family: "OpenSans";
     src: url(../UniversalFiles/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
@@ -7,6 +9,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 *{
+    /* Margin Set to 0 so header can touch edge of page */
     margin: 0px;
 }
 
@@ -15,6 +18,7 @@ body{
 }
 
 main{
+    /* set default text color to green*/
     color: #086100;
 }
 
@@ -27,6 +31,8 @@ main{
 .floatLeft{
     float: left;
 }
+
+/* Start of Header CSS */
 
 nav{
     font-family: "OpenSans";
@@ -64,6 +70,7 @@ nav h3{
     padding: 10px 15px;
 }
 .navBarLink:hover{
+    /* Create an area behind the link when you hover over it so it looks like a button */
     background-color: #3A6B36;
     border-radius: 8px;
 }
@@ -71,6 +78,7 @@ nav h3{
     color: #0CF550;
 }
 
+/* Allows nav bar to look nice at smaller screen sizes */
 @media (max-width: 500px) {
     .headerFlexBox{
         flex-wrap: wrap;
@@ -80,6 +88,8 @@ nav h3{
         width: 100%;
     }
 }
+
+/* End of Nav Bar CSS, still in header */
 
 .focusImage{
     width: 100%;
@@ -101,9 +111,12 @@ nav h3{
     width: 150px;
     height: 150px;
 
+    /* 100 is a placeholder value */
     --focus-img-height: 100;
-    --focus-img-height-inpx: calc(1px * var(--focus-img-height));
+    /* The value returned for --focus-img-height from script.js does not have units, its scalar, so we give it units*/
+    --focus-img-height-inpx: calc(1px * var(--focus-img-height)); 
 
+    /* Position Tagline at botton of image */
     position: absolute;
     top: calc(var(--focus-img-height-inpx) - 90px);
     left: 10px;
@@ -119,6 +132,8 @@ nav h3{
         margin: auto;
     }
 }
+/* End of Header CSS */
+/* Start of Content CSS */
 
 .contentSection{
     margin: 8px;
@@ -147,6 +162,8 @@ nav h3{
         flex-wrap: wrap;
     }
 }
+/* End of Content CSS */
+/* Start of Footer CSS */
 
 .footerBorder{
     height: 5px;

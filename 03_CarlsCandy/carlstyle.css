@@ -1,3 +1,5 @@
+/* Setting Up */
+
 @font-face {
     font-family: "OpenSans";
     src: url(../UniversalFiles/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
@@ -11,6 +13,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 *{
+    /* Margin Set to 0 so header can touch edge of page */
     margin: 0px;
 }
 
@@ -20,15 +23,15 @@ body{
 }
 
 main{
+    /* set default text color to black*/
     color: #000000;
 }
 
-.crossedOut{
-    text-decoration: line-through;
-}
 .floatLeft{
     float: left;
 }
+
+/* Start of Header CSS */
 
 nav{
     font-family: "OpenSans";
@@ -37,6 +40,7 @@ nav{
     padding: 10px;
     width: 100%;
 
+    /* Fixes Header to Top of Screen */
     position: fixed;
     top: 0;
 
@@ -77,11 +81,12 @@ nav h3{
     padding: 10px 15px;
 }
 .navBarLink:hover{
+    /* Create an area behind the link when you hover over it so it looks like a button */
     background-color: rgb(20, 215, 245, 0.9); /* Same color as #14D7F5 just with 90% opacity to be lighter on the eyes */
     border-radius: 8px;
 }
 
-/* Allows nav bar to show up at smaller screen sizes */
+/* Allows nav bar to look nice at smaller screen sizes */
 @media (max-width: 550px) {
     .headerFlexBox{
         flex-wrap: wrap;
@@ -91,6 +96,8 @@ nav h3{
         width: 100%;
     }
 }
+
+/* End of Nav Bar CSS, still in header */
 
 .focusImage{
     width: 100%;
@@ -111,10 +118,15 @@ nav h3{
     padding: 5px;
     width: 350px;
     height: 100px;
-
-    --focus-img-height: 100; /* placeholder value */
+    
+    /* 100 is a placeholder value */
+    --focus-img-height: 100; 
+    /* The value returned for --focus-img-height from script.js does not have units, its scalar, so we give it units*/
     --focus-img-height-inpx: calc(1px * var(--focus-img-height));
-    --focus-img-width: 100; /* placeholder value */
+
+    /* 100 is a placeholder value */
+    --focus-img-width: 100; 
+    /* The value returned for --focus-img-width from script.js does not have units, its scalar, so we give it units*/
     --focus-img-width-inpx: calc(1px * var(--focus-img-width));
 
     position: absolute;
@@ -133,7 +145,8 @@ nav h3{
         margin: auto;
     }
 }
-
+/* End of Header CSS */
+/* Start of Content CSS */
 
 .contentSection{
     margin: 8px;
@@ -163,6 +176,8 @@ nav h3{
         flex-wrap: wrap;
     }
 }
+/* End of Content CSS */
+/* Start of Footer CSS */
 
 .footerBorder{
     height: 5px;
