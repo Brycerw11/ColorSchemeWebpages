@@ -148,7 +148,6 @@ nav h3{
     }
 }
 
-
 .footerBorder{
     height: 5px;
     border-width: 0;
@@ -165,9 +164,6 @@ footer{
 
     align-items: center;
     justify-content: space-evenly;
-}
-footer svg{
-    fill: rgb(227, 45, 45);
 }
 .legalStuff{
     margin: 35px 20px;

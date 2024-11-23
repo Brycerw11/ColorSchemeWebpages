@@ -1,1 +1,7 @@
-An eco-friendly cruise company named Sustainable Sailings. It's color scheme is monochrome green. The specific shades of green are: #2DC020, #3A9632, #0CF550, #3A6B36, #405D3E, #2B332B. The color green was chosen for the natural and eco-friendly feeling commonly associated with it. Green also symbolizes a new begining, symbolizing the recent priority of the preservation of nature. Lastly, the monochrome format was chosen to create a sense of simplicity across the page as to not detract from the amenities of our sailings.
+A pumpkin patch's website. The pumpkin patch's name is Polly's Pumpkin Patch.
+The color scheme for this one is analogous. I chose various versions of orange and red-orange for few reasons:
+    1. Orange is the primary color of most pumpkins.
+    2. Orange envokes a feeling of a youthfull optimism and happiness, perfect for a place where people of all ages can partake in the Halloween and Fall Fun.
+    3. Similarly, Red-Orange envokes a feeling of bright and youthful energy, once again, perfect for a Pumpkin Patch.
+
+I got these colors through the Adobe Colors color wheel.

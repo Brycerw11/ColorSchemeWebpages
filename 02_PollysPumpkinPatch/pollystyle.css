@@ -2,6 +2,10 @@
     font-family: "OpenSans";
     src: url(../UniversalFiles/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Nunito";
+    src: url(../UniversalFiles/fonts/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+}
 h1, h2, h3, h4, h5, h6, p{
     font-family: "OpenSans";
 }
@@ -11,12 +15,12 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 body{
-    background: url("./images/icons/GreenBackground.svg");
+    background: url("./images/icons/OrangeBackground.svg");
 }
 
 main{
-    /* set defualt text color */
-    color: #086100;
+    /* set default text color to black*/
+    color: #000000;
 }
 
 main p {
@@ -35,9 +39,15 @@ main p {
 
 nav{
     font-family: "OpenSans";
-    background-color: #F56C14;
+    background-color: #F55914;
 
     padding: 10px;
+    width: 100%;
+
+    border-bottom: #F53010 solid 3px;
+
+    position: fixed;
+    top: 0;
 }
 .headerFlexBox{
     display: flex;
@@ -54,11 +64,15 @@ nav a {
 }
 nav h3{
     padding: 3px;
-    color: white;
+    color: black;
+    font-weight: 800;
+    font-family: "Nunito";
+    font-size: 1.3rem;
 }
 .navBarLink{
     text-align: center;
-    color: white;
+    color: black;
+    font-weight: 500;
     margin: 0px 3px;
 
     border-radius: 0px;
@@ -67,11 +81,8 @@ nav h3{
     padding: 10px 15px;
 }
 .navBarLink:hover{
-    background-color: #3A6B36;
+    background-color: #F58014;
     border-radius: 8px;
-}
-.activePage{
-    color: #0CF550;
 }
 
 @media (max-width: 500px) {
@@ -122,11 +133,11 @@ nav h3{
 .footerBorder{
     height: 5px;
     border-width: 0;
-    color: #2B332B;
+    color: #000000;
     background-color: #2B332B;
 }
 footer{
-    background-color: #405D3E;
+    background-color: #F58014;
     color: white;
 }
 .footerContainer{
@@ -136,11 +147,8 @@ footer{
     align-items: center;
     justify-content: space-evenly;
 }
-footer svg{
-    fill: white;
-}
 .legalStuff{
-    margin: 35px 20px;
+    margin: 25px 20px;
 }
 .socialMedias{
     list-style: none;
@@ -149,7 +157,7 @@ footer svg{
     display: inline;
 }
 footer a{
-    color: #0CF550;
+    color: #F5BE14;
 }
 
 .footerBottom{
@@ -159,6 +167,5 @@ footer a{
     padding-bottom: 10px;
 }
 button:hover{
-    background-color: #0CF550;
-    color: #2B332B;
+    background-color: #F5AB65;
 }
