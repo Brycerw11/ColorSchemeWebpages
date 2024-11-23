@@ -134,11 +134,11 @@ nav h3{
     height: 5px;
     border-width: 0;
     color: #000000;
-    background-color: #2B332B;
+    background-color: #000000;
 }
 footer{
     background-color: #F58014;
-    color: white;
+    color: #000000;
 }
 .footerContainer{
     font-size: 1.1rem;
@@ -157,7 +157,7 @@ footer{
     display: inline;
 }
 footer a{
-    color: #F5BE14;
+    color: #000000;
 }
 
 .footerBottom{
