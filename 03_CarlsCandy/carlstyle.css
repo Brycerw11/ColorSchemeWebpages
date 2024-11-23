@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../UniversalFiles/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(../UniversalFiles/fonts/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "OpenSans";
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    /* background: url("./images/icons/GreenBackground.svg"); */
+    background: url(./images/icons/CandyBackground.svg);
+}
+
+main{
+    color: #000000;
+}
+
+.crossedOut{
+    text-decoration: line-through;
+}
+.floatLeft{
+    float: left;
+}
+
+nav{
+    font-family: "OpenSans";
+    background: #F50076;
+
+    padding: 10px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 100;
+}
+nav a {
+    text-decoration: none;
+}
+.headerFlexBox{
+    display: flex;
+    align-items: center;
+}
+.logoAndLogoText{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+div.logoDiv{
+    padding: 5px;
+}
+nav h3{
+    padding: 3px;
+    color: #000000;
+
+    font-family: "Nunito";
+    font-size: 1.8rem;
+}
+.navBarLink{
+    text-align: center;
+    color: #000000;
+    margin: 0px 3px;
+
+    font-weight: 600;
+
+    border-radius: 0px;
+}
+.navBarLinkDiv{
+    padding: 10px 15px;
+}
+.navBarLink:hover{
+    background-color: rgb(20, 215, 245, 0.9); /* Same color as #14D7F5 just with 90% opacity to be lighter on the eyes */
+    border-radius: 8px;
+}
+
+/* Allows nav bar to show up at smaller screen sizes */
+@media (max-width: 550px) {
+    .headerFlexBox{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logoAndLogoText{
+        width: 100%;
+    }
+}
+
+.focusImage{
+    width: 100%;
+    height: auto;
+}
+
+.focusImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.tagLine{
+    display: flex;
+    background-color: rgb(245, 220, 20, 0.8); /* Same color as #F5DC14 but at 80% opacity */
+    border-radius: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 350px;
+    height: 100px;
+
+    --focus-img-height: 100; /* placeholder value */
+    --focus-img-height-inpx: calc(1px * var(--focus-img-height));
+    --focus-img-width: 100; /* placeholder value */
+    --focus-img-width-inpx: calc(1px * var(--focus-img-width));
+
+    position: absolute;
+    top: calc(var(--focus-img-height-inpx) - 130px);
+    left: calc(calc(var(--focus-img-width-inpx) /2) - 150px);
+}
+.tagLine > h2{
+    width: 100%;
+    text-align: center;
+    font-family: "Nunito";
+}
+@media (max-width: 550px) {
+    .tagLine{
+        /* Moves tag line underneath the focusImage */
+        position: static;
+        margin: auto;
+    }
+}
+
+
+.contentSection{
+    margin: 8px;
+
+    background-color: rgb(255, 255, 255, 0.85); /* white @ 85% opacity */
+
+    padding: 10px;
+    border-radius: 10px;
+}
+.contentSection img{
+    margin: 5px;
+}
+.contentSection p{
+    text-indent: 4rem;
+    font-weight: 525;
+}
+.sections23{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sections23 img{
+    width: 50%;
+    min-width: 180px;
+    height: auto;
+}
+.sections23 p {
+    text-indent: 0px;
+}
+@media (max-width: 650px) {
+    .sections23{
+        flex-wrap: wrap;
+    }
+}
+
+.footerBorder{
+    height: 5px;
+    border-width: 0;
+    color: #000000;
+    background-color: #000000;
+}
+footer{
+    background-color: #14D7F5;
+    color: black;
+}
+.footerContainer{
+    font-size: 1.1rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+.legalStuff{
+    margin: 35px 20px;
+}
+.socialMedias{
+    list-style: none;
+}
+.socialMedias > li {
+    display: inline;
+}
+footer a{
+    color: #000000;
+}
+
+.footerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+button:hover{
+    background-color: #F50076;
+    color: #000000;
+}
