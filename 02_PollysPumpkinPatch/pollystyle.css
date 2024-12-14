@@ -162,6 +162,7 @@ footer{
     margin: 25px 20px;
 }
 .socialMedias{
+    /* Makes list tag not look like a list */
     list-style: none;
 }
 .socialMedias > li {
